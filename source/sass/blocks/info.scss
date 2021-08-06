@@ -1,0 +1,64 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: $fs-product-title;
+  line-height: $lh-product-title;
+  border-top: 1px solid $extra-grey;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    border: none;
+    padding-bottom: 10px;
+  }
+}
+
+.info__title {
+  color: $extra-basic-white;
+  padding-bottom: 10px;
+  padding-top: 12px;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.info__tel {
+  color: $basic-white;
+  font-size: $fs-additional-desktop;
+  line-height: 16px;
+}
+
+.info__security {
+  color: $basic-white;
+  padding-top: 18px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+  }
+}
+
+.info__unsubscribe {
+  color: $basic-white;
+  padding-bottom: 33px;
+  padding-top: 5px;
+}
+
+
+@media (min-width: $desktop-width) {
+  .info__contact {
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.info__link {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-end;
+  }
+}

@@ -1,0 +1,66 @@
+.promo {
+  background-color: $special-pink;
+  text-align: center;
+  margin-top: 70px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 580px;
+    margin: 110px auto 0 auto;
+  }
+}
+
+.promo__title {
+  font-size: $fs-extra;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding-top: 27px;
+  letter-spacing: 1.4px;
+  margin: 0;
+  opacity: 0.7;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+  }
+}
+
+.promo__accent {
+  font-size: 45px;
+  line-height: 54px;
+  margin: 0;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.promo__text {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 8px auto 38px auto;
+  max-width: 285px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 330px;
+    margin-bottom: 23px;
+  }
+}
+
+.promo__link {
+  background-color: $basic-white;
+  font-size: $fs-extra;
+  line-height: 16px;
+  padding: 17px 53px 16px 53px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: $basic-black;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+}
+
+.promo__note {
+  padding: 20px 18px 20px 18px;
+  font-size: $fs-extra;
+  line-height: $lh-product-title;
+}

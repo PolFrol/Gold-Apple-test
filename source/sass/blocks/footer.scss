@@ -1,0 +1,15 @@
+.footer {
+  background-color: $basic-black;
+  margin-top: 70px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 90px;
+  }
+}
+
+.footer__social {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

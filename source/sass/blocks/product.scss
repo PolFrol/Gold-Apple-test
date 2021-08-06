@@ -1,0 +1,135 @@
+.product__title {
+  font-size: $fs-product-title;
+  line-height: $lh-product-title;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: 7px;
+
+  @media (min-width: $desktop-width) {
+    font-size: $fs-extra;
+    line-height: 16px;
+    margin-top: 19px;
+    margin-bottom: 9px;
+  }
+}
+
+.product__link {
+  color: $basic-black;
+}
+
+.product__table {
+  padding-top: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.product__text {
+  margin: 0;
+  font-size: 18px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__img {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+.product__name {
+  text-transform: uppercase;
+}
+
+@media (min-width: $desktop-width) {
+  .product__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__wrapper--big {
+    align-items: flex-end;
+  }
+
+  .product__wrapper--small {
+    align-items: flex-start;
+  }
+}
+
+.product__price {
+  display: flex;
+  gap: 17px;
+}
+
+.product__cell {
+  font-weight: bold;
+  position: relative;
+  font-size: 17px;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 23px;
+    line-height: 32px;
+  }
+}
+
+.product__cell--old-price {
+  color: $basic-grey;
+}
+
+.product__cell--old-price::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid $basic-grey;
+  top: 10px;
+  left: -5px;
+  width: 67px;
+
+  @media (min-width: $desktop-width) {
+    top: 17px;
+    left: -5px;
+    width: 88px;
+  }
+}
+
+.product__buy {
+  display: none;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: $fs-extra;
+    line-height: $lh-extra;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin-top: 14px;
+  }
+}
+
+.product__buy::before {
+  content: "";
+  position: absolute;
+  background-image: url("/img/ic.svg");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  top: -4px;
+  left: 123px;
+}
+
+.product__buy--big {
+  padding-right: 30px;
+}
+
+.product__volume {
+  font-size: $fs-main;
+  text-transform: none;
+
+  @media (min-width: $desktop-width) {
+    font-size: $fs-desktop-main;
+  }
+}

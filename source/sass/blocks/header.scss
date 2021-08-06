@@ -1,0 +1,30 @@
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 54px;
+  }
+}
+
+.header__logo {
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-bottom: 0;
+    order: 2;
+  }
+}
+
+.header__nav {
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+  }
+}

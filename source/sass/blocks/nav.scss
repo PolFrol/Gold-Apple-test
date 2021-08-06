@@ -1,0 +1,29 @@
+.nav {
+  font-size: $fs-additional;
+  line-height: $lh-additional;
+  color: $basic-black;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Graphik", "Arial", sans-serif;
+
+  @media (min-width: $desktop-width) {
+    min-width: 490px;
+  }
+}
+
+.nav__link {
+  color: $basic-black;
+}
+
+.nav__link--special {
+  color: $spesial-red;
+}
+
+.nav__item--desktop {
+  @media (max-width: $modile-width-only) {
+    display: none;
+  }
+}

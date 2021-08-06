@@ -1,0 +1,64 @@
+.intro__wrapper {
+  text-align: center;
+}
+
+.intro__wrapper-img {
+  text-align: center;
+}
+
+.intro__title {
+  font-size: $fs-accent;
+  line-height: $lh-accent;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+  @media (min-width: $desktop-width) {
+    font-size: $fs-accent-desktop;
+    line-height: $lh-accent-desktop;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.intro__text {
+  padding-top: 0;
+  padding-bottom: 47px;
+  margin: 0 auto;
+  max-width: 257px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 475px;
+    padding-bottom: 36px;
+  }
+}
+
+.intro__link {
+  background-color: $basic-black;
+  color: white;
+  font-size: $fs-extra;
+  line-height: $lh-extra;
+  padding: 21px 77px 18px 78px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+
+  @media (min-width: $desktop-width) {
+    padding: 18px 119px;
+    font-size: $fs-additional-desktop;
+    line-height: $lh-title;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__img {
+    width: 580px;
+    height: 335px;
+  }
+}
+
+.letter {
+  font-family: "Gowun Dodum", "Helvetica", sans-serif;
+}

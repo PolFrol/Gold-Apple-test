@@ -1,0 +1,31 @@
+.app__list {
+  display: flex;
+  gap: 32px;
+  padding-bottom: 30px;
+  max-width: 247px;
+  margin: -5px auto 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 79px;
+  }
+}
+
+.app__link--apple {
+  @media (min-width: $desktop-width) {
+    width: 85px;
+    height: 23px;
+  }
+}
+
+.app__link--google {
+  background-image: url("/img/footer/google.svg");
+  background-repeat: no-repeat;
+  width: 116px;
+  height: 28px;
+
+  @media (min-width: $desktop-width) {
+    background-image: url("/img/footer/google-play-desktop.svg");
+    width: 93px;
+    height: 28px;
+  }
+}

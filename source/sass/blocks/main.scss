@@ -1,0 +1,19 @@
+.main__wrapper-logo {
+  display: grid;
+}
+
+.main__link {
+  text-align: center;
+  padding-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main__logo {
+    width: 223px;
+    height: 55px;
+  }
+}
